@@ -1,0 +1,18 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        maven {
+            name = 'MinecraftForge'
+            url = 'https://maven.minecraftforge.net/'
+        }
+    }
+}
+
+plugins {
+    id 'org.gradle.toolchains.foojay-resolver-convention' version '0.7.0'
+}
+
+rootProject.name = 'bland-snowday-christmas'
+
+include 'forge-1.20.1'
+project(':forge-1.20.1').projectDir = file('versions/forge-1.20.1')
