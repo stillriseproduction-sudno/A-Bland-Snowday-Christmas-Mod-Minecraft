@@ -1,0 +1,11 @@
+plugins {
+    id 'base'
+}
+
+tasks.named('build') {
+    dependsOn ':forge-1.20.1:build'
+}
+
+tasks.named('clean') {
+    dependsOn ':forge-1.20.1:clean'
+}
